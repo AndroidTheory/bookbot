@@ -14,7 +14,6 @@ def letter_count(file_contents):
     nospaces_string = "".join(file_contents.split())
     for char in nospaces_string:
         if char in letters:
-            #update the value + 1
             letters[char] += 1 
         else:
             if char.isalpha():
@@ -38,5 +37,6 @@ def formatted_report(path_to_file):
         print("The '{}' character was found '{}' times".format(item[1], item[0])) 
     
     print('--- End Report ---')
+
 
 formatted_report('books/frankenstein.txt') 
